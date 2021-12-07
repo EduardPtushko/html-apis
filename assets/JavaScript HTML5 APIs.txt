@@ -1,0 +1,71 @@
+Project Setup and Install
+Feature Detecting the Drag and Drop API
+Declaring a Draggable Element
+Active States with Drag Enter and Leave Events
+Drag Over and Drop Effects
+Binding Drop Events
+Passing DOM Node Data via Drag Start Events
+Dragging Files into the Drop Zone
+Improving Drag UX on the Document
+Restricting Specific File Types
+Using FileReader to Render Thumbnails
+Appending Files to FormData Objects
+POST a FormData Object to Node.js
+Uploading Files from <input type=”file”>
+Feature Detecting the Notification API
+Using Notification.requestPermission() with Async/Await
+Creating a new Notification() Factory
+Safety Checking the Notification.permission Property
+Focusing Browser Tabs after Notification Click Events
+<video> and <source> elements
+Configuration Attributes
+Binding to Media Events
+Custom Play, Pause and Stop Controls
+Syncing Media Progress to <input type=”range”>
+Syncing and Displaying Real-time Duration
+Scrubbing Duration with <input type=”range”>
+Scrubbing Volume Levels and Mute Functionality
+Picture-in-Picture (PiP) Mode
+<audio> Element and Reusing Media APIs
+Using the new Audio() constructor
+Feature Detecting the Page Visibility API
+Page Visibility Events and States
+Performing Actions on Visibility State Changes
+Feature Detecting the Fullscreen API
+Fullscreen Mode for the Document with Async/Await
+Fullscreen Mode for a Single Element
+Fullscreen Change (Enter and Exit) Events
+Programmatically Exiting Full Screen Mode
+Feature Detecting the History API
+Pushing New History State
+Push State versus Replace State
+Rendering Data on Route Changes
+Push State from Nav Click Events
+Loading Data on Route Refresh
+History Back, Forward and Go API
+Popping State from the History Stack
+Feature Detecting the Canvas API
+Canvas Context and Basic Shapes
+Create and Update State via Mouse Events
+Rendering to Canvas with requestAnimationFrame
+Clearing the Canvas
+Downloading Canvas Images via Data URIs
+Feature Detecting the Async Clipboard API
+Writing Text to Clipboard with Async/Await
+Reading Text from Clipboard and Permissions API
+Intercepting Copy and Paste Events to Customize Data
+Feature Detecting the Web Storage API
+Set and Get Data to localStorage
+Storing JSON Objects in localStorage
+Removing Items and Emptying localStorage
+Triggering localStorage from UI Events
+Creating a Web Storage Module
+Error Handling Exceeded Quotas
+localStorage onChange Events
+Getting all localStorage values
+Feature Detecting the Geolocation API
+Requesting Geolocation Position to get User’s Position
+Handling Permission and Location Errors
+Advanced Geolocation Options
+Watching and Clearing Realtime Geolocation Position
+Rendering Coordinates to Google Maps
