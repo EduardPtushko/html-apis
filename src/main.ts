@@ -5,8 +5,8 @@ const app = document.getElementById('app') as HTMLDivElement
 app.innerHTML = `
     <h1>JavaScript HTML5 APIs</h1>
     <div class='uploader'>
-        <div id='item-0' class='dragme' draggable='true'></div>
-        <div class='dropzone'>🎯 Drag Here!</div>
+        <h2>Upload your files</h2>
+        <div class='dropzone'>🗂 Drag to Upload!</div>
     </div>
 
     <style>
@@ -41,12 +41,7 @@ app.innerHTML = `
 `
 
 const init = () => {
-    const dragme = document.querySelector('.dragme') as HTMLDivElement
     const dropzone = document.querySelector('.dropzone') as HTMLDivElement
-
-    dragme.addEventListener('dragstart', (e) => {
-        e.dataTransfer?.setData('text/plain', (e.target as Element).id)
-    })
 
     dropzone.addEventListener('dragenter', (e) => {
         ;(e.target as Element).classList.add('active')
@@ -69,12 +64,11 @@ const init = () => {
         e.stopPropagation()
         ;(e.target as Element).classList.remove('active')
 
-        const id = e.dataTransfer?.getData('text/plain')
-        const element = document.getElementById(id as string)
-        if (element) {
-            dropzone.append(element)
-        }
+        const { files } = e.dataTransfer
     })
+
+    document.addEventListener('dragover', (e) => e.preventDefault())
+    document.addEventListener('drop', (e) => e.preventDefault())
 }
 
 if ('draggable' in document.createElement('div')) {
