@@ -5,4 +5,3 @@ const app = document.getElementById('app') as HTMLDivElement
 app.innerHTML = `
     <h1>JavaScript HTML5 APIs</h1>
 `
-
